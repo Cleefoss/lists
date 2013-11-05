@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class TestList {
 	/* Declare a list of Strings here named list */
-	MyLinkedList<String> list = new MyLinkedList<String>();	
+	MyLinkedList<String> list = new MyLinkedList<String>();
 
 	public void prepareList() {
 		list.clear();
@@ -47,9 +47,9 @@ public class TestList {
 		assertEquals(list.size(), 3);
 		assertEquals(list.get(0), "foo");
 		list.add(1, "foobar");
+        assertEquals(list.get(1), "foobar");
+        assertEquals(list.get(3), "baz");
 		assertEquals(list.size(), 4);
-		assertEquals(list.get(1), "foobar");
-		assertEquals(list.get(3), "baz");
 	}
 	
 	/**
